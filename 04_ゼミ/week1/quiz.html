@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h1>私の趣味は何でしょう？</h1>
+    <button id="sentaku1">カメラ</button>
+    <button id="sentaku2">ゲーム</button>
+    <button id="sentaku3">読書</button>
+    <div id="kotae">3つの中から選んでや</div>
+
+    <script>
+      //ボタンが押されたら文字が表示できるような処理をする
+      const element1 = document.getElementById("sentaku1")
+      const element2 = document.getElementById("sentaku2")
+      const element3 = document.getElementById("sentaku3")
+      const kotae = document.getElementById("kotae")
+
+      element1.onclick = function () {
+        kotae.textContent = "間違えやで"
+      }
+      element2.onclick = function () {
+        kotae.textContent = "正解やで"
+      }
+      element3.onclick = function () {
+        kotae.textContent = "間違えやで"
+      }
+    </script>
+  </body>
+</html>
